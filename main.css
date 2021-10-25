@@ -2,6 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: rgb(14, 34, 27); */
+    background-color: rgb(141, 128, 72);
     color: #fff;
+}
+
+body {
+    margin:  10px 20px;
+    padding: 10px;
+    background: #feedcf;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    padding: 10px 15px;
+}
+
+p, h1, label {
+    padding: 5px;
+}
+
+select {
+    border-radius: 10px;
+    /* border: none; */
+    border-color: rgb(3, 4, 41);
+    color: rgb(114, 4, 4);
+    padding: 10px 13px;
+    font-size: 1.1em;
 }

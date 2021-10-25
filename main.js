@@ -34,7 +34,7 @@ updateAllowance();
 
 
 const select = document.querySelector('select');
-const comment = document.querySelector('p');
+const comment = document.querySelector('.weatherreport');
 
 select.addEventListener('change', setWeather);
 
