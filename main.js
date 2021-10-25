@@ -6,26 +6,26 @@
     run this code id above is not true.
 } */
 
-document.querySelector('html').style.backgroundcolor = 'blue';
+
 
 const checkBox = document.querySelector('input');
-      const para = document.querySelector('p');
-      let shoppingDone = false;
+const para = document.querySelector('p');
+let homeworkDone = false;
 
-      checkBox.addEventListener('change',function() {
-        checkBox.disabled = true;
-        shoppingDone = true;
-        updateAllowance();
-      });
+checkBox.addEventListener('change', function() {
+  checkBox.disabled = true;
+  homeworkDone = true;
+  updateAllowance();
+});
 
-      function updateAllowance() {
-        if(shoppingDone === true) {
-          var childsAllowance = 10;
-        } else {
-          var childsAllowance = 5;
-        }
+function updateAllowance() {
+  if (homeworkDone === true) {
+    var childsAllowance = 10;
+  } else {
+    var childsAllowance = 5;
+  }
 
-        para.textContent = 'Child has earned $' + childsAllowance + ' this week.';
-      }
+  para.textContent = 'Abdulhayy has completed his homework and has now earned $' + childsAllowance + ' this week.';
+}
 
-      updateAllowance();
+updateAllowance();
